@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scjgt_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Au7-lJ-cd1">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_scjgt.png" translatesAutoresizingMaskIntoConstraints="NO" id="hBT-Lj-q3L">
+                    <rect key="frame" x="120" y="70" width="360" height="302"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hBT-Lj-q3L" secondAttribute="height" multiplier="870:730" id="N8T-KF-Hdv"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scjgt_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ib7-ai-Gvr">
+                    <rect key="frame" x="120" y="556" width="360" height="29"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ib7-ai-Gvr" secondAttribute="height" multiplier="870:70" id="TmL-0h-5eD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hBT-Lj-q3L" firstAttribute="width" secondItem="Au7-lJ-cd1" secondAttribute="width" multiplier="6:10" id="1YE-WM-aI2"/>
+                <constraint firstItem="hBT-Lj-q3L" firstAttribute="height" secondItem="Au7-lJ-cd1" secondAttribute="height" id="GpD-lp-xg2"/>
+                <constraint firstAttribute="bottom" secondItem="Au7-lJ-cd1" secondAttribute="bottom" id="Jhp-zP-fhg"/>
+                <constraint firstAttribute="bottom" secondItem="ib7-ai-Gvr" secondAttribute="bottom" constant="15" id="OAt-JS-B8U"/>
+                <constraint firstItem="ib7-ai-Gvr" firstAttribute="width" secondItem="Au7-lJ-cd1" secondAttribute="width" multiplier="6:10" id="SDe-RA-tQz"/>
+                <constraint firstItem="hBT-Lj-q3L" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xqc-u4-wUD"/>
+                <constraint firstItem="ib7-ai-Gvr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Z97-6p-5kW"/>
+                <constraint firstItem="hBT-Lj-q3L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="awe-7x-7od"/>
+                <constraint firstAttribute="trailing" secondItem="Au7-lJ-cd1" secondAttribute="trailing" id="cNS-xv-LX0"/>
+                <constraint firstItem="Au7-lJ-cd1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r8I-bl-Nb6"/>
+                <constraint firstItem="Au7-lJ-cd1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rer-mm-ApO"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GpD-lp-xg2"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="loading_scjgt.png" width="870" height="730"/>
+        <image name="scjgt_bg.png" width="1242" height="2208"/>
+        <image name="scjgt_logo.png" width="870" height="70"/>
+    </resources>
+</document>
